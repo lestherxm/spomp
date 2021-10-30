@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="900.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spomp.controller.DeptosController">
+    <stylesheets>
+        <URL value="@/view/style/deptos.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="900.0" styleClass="AnchorPainDataUser">
+         <children>
+            <Button id="BtnModuloActual" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="120.0" layoutY="59.0" styleClass="LabelH1" text="DEPARTAMENTOS" />
+            <Button id="BtnRegresarAModuloAnterior" fx:id="BtnRegresar" layoutX="786.0" layoutY="20.0" mnemonicParsing="false" onAction="#BtnRegresarAlMantenimiento" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="706.0" layoutY="59.0" styleClass="LabelH1" text="REGRESAR" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TablaDepartamentos" layoutX="76.0" layoutY="226.0" prefHeight="200.0" prefWidth="748.0">
+        <columns>
+          <TableColumn fx:id="ColumnaNombre" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="NOMBRE" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="DESCRIPCIÓN" />
+            <TableColumn fx:id="ColumnaDescription" prefWidth="500.0" text="DESCRIPCIÓN" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="295.0" layoutY="445.0" prefHeight="126.0" prefWidth="310.0" styleClass="AnchorPaneMain">
+         <children>
+            <Button id="BtnCreate" fx:id="BtnCrearDpto" layoutX="14.0" layoutY="23.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoCrearDepto" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnUpdate" fx:id="BtnActualizarDepto" disable="true" layoutX="114.0" layoutY="23.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoActualizarDepto" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnDelete" fx:id="BtnEliminarDepto" disable="true" layoutX="217.0" layoutY="23.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoEliminarDepto" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

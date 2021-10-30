@@ -1,0 +1,22 @@
+.BtnCrud{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+
+.BtnCrud:hover{
+    -fx-background-color: #8c8377;
+}
+
+#BtnCreate{
+    -fx-background-image:url('../img/crud/Create.png');
+}
+
+#BtnUpdate{
+    -fx-background-image:url('../img/crud/Update.png');
+}
+
+#BtnDelete{
+    -fx-background-image:url('../img/crud/Delete.png');
+}

@@ -1,3 +1,0 @@
-PASSWORD ENCRIPTATION -> https://es.stackoverflow.com/questions/51184/c%C3%B3mo-encriptar-un-campo-de-sql-server
-DEPT_GT -> https://www.familysearch.org/wiki/es/
-CITY_GT -> https://www.familysearch.org/wiki/es/

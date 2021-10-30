@@ -16,7 +16,9 @@ import java.sql.SQLException;
 public class ConnectionSQLite {
     
          private Connection connection = null;
-         private String url = "jdbc:sqlite:spomp.db";
+         private String pathDB = "src\\main\\resources\\config\\spomp.db";
+         private String url = "jdbc:sqlite:"+pathDB;
+         
          
          public ConnectionSQLite(){
              if(connection == null){

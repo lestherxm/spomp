@@ -1,0 +1,39 @@
+@IMPORT url('menuadmincpy.css');
+
+#BtnModuloActual{
+    -fx-background-image: url('../img/menu/mantenimiento.png');
+}
+
+#BtnUsuariosOption{
+    -fx-background-image: url('../img/mantenimientoadmincpy/usuarios.png');
+}
+
+#BtnDeptosOption{
+    -fx-background-image: url('../img/mantenimientoadmincpy/departamento.png');
+}
+
+#BtnSucursalesOption{
+    -fx-background-image: url('../img/mantenimientoadmincpy/sucursales.png');
+}
+
+#BtnArticulosOption{
+    -fx-background-image: url('../img/mantenimientoadmincpy/articulos.png');
+}
+
+#BtnRubrosOption{
+    -fx-background-image: url('../img/mantenimientoadmincpy/rubros.png');
+}
+
+#BtnProveedoresOption{
+    -fx-background-image: url('../img/mantenimientoadmincpy/proveedores.png');
+}
+
+
+
+
+
+
+
+
+
+

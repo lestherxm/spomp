@@ -1,0 +1,6 @@
+@IMPORT url('menuadmincpy.css');
+@IMPORT url('crud.css');
+
+#BtnModuloActual{
+    -fx-background-image:url('../img/mantenimientoadmincpy/usuarios.png');
+}

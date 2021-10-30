@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.spomp.controller.RubrosController">
+    <stylesheets>
+        <URL value="@/view/style/rubros.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="900.0" styleClass="AnchorPainDataUser">
+         <children>
+            <Button id="BtnModuloActual" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="120.0" layoutY="59.0" styleClass="LabelH1" text="USUARIOS" />
+            <Button id="BtnRegresarAModuloAnterior" fx:id="BtnRegresar" layoutX="786.0" layoutY="20.0" mnemonicParsing="false" onAction="#BtnRegresarAlMantenimiento" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="706.0" layoutY="59.0" styleClass="LabelH1" text="REGRESAR" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

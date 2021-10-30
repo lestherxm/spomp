@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="900.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spomp.controller.MenuAdminProvController">
+    <stylesheets>
+        <URL value="@/view/style/menuadminprov.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="900.0" styleClass="AnchorPainDataUser">
+         <children>
+            <Button id="BtnImgUser" layoutX="22.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label fx:id="LabelNameUser" layoutX="133.0" layoutY="48.0" styleClass="LabelH1" text="[NAME USER]" />
+            <Label fx:id="LabelTypeUser" layoutX="133.0" layoutY="70.0" styleClass="LabelH2" text="[TYPE: ROLE]" />
+            <Button id="BtnModuleImg" layoutX="786.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="729.0" layoutY="64.0" styleClass="LabelH1" text="MENÚ" />
+            <Label fx:id="LabelCurrentDbms" layoutX="411.0" layoutY="9.0" styleClass="LabelCurrentDBServer" text="SQLSERVER" />
+         </children>
+      </AnchorPane>
+      <Button id="BtnImgSalir" fx:id="BtnSalirOption" layoutX="730.0" layoutY="442.0" mnemonicParsing="false" onAction="#MetodoSalirOption" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImgOptions" />
+   </children>
+</AnchorPane>

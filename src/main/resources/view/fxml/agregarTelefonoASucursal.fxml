@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="900.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.spomp.controller.AgregarTelefonoASucursalController">
+    <stylesheets>
+        <URL value="@/view/style/agregartelefonoasucursal.css" />
+    </stylesheets>
+</AnchorPane>

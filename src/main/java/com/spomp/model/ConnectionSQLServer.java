@@ -7,19 +7,18 @@ package com.spomp.model;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 /**
  *
  * @author 50232
  */
-public class ConnectionSQLServer {
-    
+public class ConnectionSQLServer{
+   
     private Properties props;
     private InputStream in;
     private String Path;
@@ -42,8 +41,8 @@ public class ConnectionSQLServer {
     private void getPropertiesSQLServer(){
         try{
             props = new Properties();
-            Path = "C:\\spomp\\sqlserver.properties"; 
-            in = Files.newInputStream(FileSystems.getDefault().getPath(Path));
+            Path = "\\config\\sqlserver.properties"; 
+            in = getClass().getClassLoader().getResourceAsStream(Path);
             props.load(in);
             in.close();   
         }catch(IOException ex){
@@ -85,5 +84,5 @@ public class ConnectionSQLServer {
             e.printStackTrace();
         }
     }
-    
+
 }

@@ -1,0 +1,6 @@
+@IMPORT url('menuadmincpy.css');
+@import url('crud.css');
+
+#BtnModuloActual{
+    -fx-background-image: url('../img/mantenimientoadmincpy/departamento.png');
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" styleClass="AnchorPaneMain" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spomp.controller.SucursalesController">
+    <stylesheets>
+        <URL value="@/view/style/sucursales.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="900.0" styleClass="AnchorPainDataUser">
+         <children>
+            <Button id="BtnModuloActual" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="120.0" layoutY="59.0" styleClass="LabelH1" text="SUCURSALES" />
+            <Button id="BtnRegresarAModuloAnterior" fx:id="BtnRegresar" layoutX="786.0" layoutY="20.0" mnemonicParsing="false" onAction="#BtnRegresarAlMantenimiento" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="706.0" layoutY="59.0" styleClass="LabelH1" text="REGRESAR" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TablaSucursales" layoutX="48.0" layoutY="184.0" prefHeight="287.0" prefWidth="495.0">
+        <columns>
+          <TableColumn fx:id="ColumnaDepartamento" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="DEPARTAMENTO" />
+            <TableColumn fx:id="ColumnaMunicipio" maxWidth="150.0" minWidth="51.0" prefWidth="150.0" text="MUNICIPIO" />
+            <TableColumn fx:id="ColumnaDirection" maxWidth="294.0" minWidth="195.0" prefWidth="120.0" text="DIRECCIÓN" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="48.0" layoutY="497.0" prefHeight="92.0" prefWidth="310.0" styleClass="AnchorPaneMain">
+         <children>
+            <Button id="BtnCreate" fx:id="BtnCrearSucursal" layoutX="14.0" layoutY="7.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoCrearSucursal" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnUpdate" fx:id="BtnActualizarSucursal" disable="true" layoutX="115.0" layoutY="7.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoActualizarSucursal" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnDelete" fx:id="BtnEliminarSucursal" disable="true" layoutX="216.0" layoutY="7.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoEliminarSucursal" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TablaDeptoSucursales" layoutX="565.0" layoutY="358.0" prefHeight="113.0" prefWidth="294.0">
+        <columns>
+          <TableColumn fx:id="ColumnaDeptoSucursales" prefWidth="250.0" text="DEPARTAMENTOS (SUCURSAL)" />
+            <TableColumn fx:id="ColumnaN_People" prefWidth="43.0" text="N" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="564.0" layoutY="499.0" prefHeight="92.0" prefWidth="294.0" styleClass="AnchorPaneMain">
+         <children>
+            <Button id="BtnCreate" fx:id="BtnCrearDeptoSucursal" disable="true" layoutX="14.0" layoutY="12.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoCrearDeptoSucursal" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnUpdate" fx:id="BtnActualizarDeptoSucursal" disable="true" layoutX="115.0" layoutY="12.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoActualizarArticulo" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnDelete" fx:id="BtnEliminarDeptoSucursal" disable="true" layoutX="216.0" layoutY="12.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoEliminarArticulo" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TablaTelefonosSucursal" layoutX="564.0" layoutY="184.0" prefHeight="159.0" prefWidth="127.0">
+        <columns>
+          <TableColumn fx:id="ColumnaTelefonosSucursal" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" text="TELÉFONOS" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="703.0" layoutY="158.0" prefHeight="188.0" prefWidth="89.0" styleClass="AnchorPaneMain">
+         <children>
+            <Button id="BtnCreate" fx:id="BtnCrearTelefonoSucursal" disable="true" layoutX="5.0" layoutY="7.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoCrearTelefonoSucursal" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+            <Button id="BtnUpdate" fx:id="BtnActualizarDeptoSucursal1" disable="true" layoutX="5.0" layoutY="100.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoActualizarArticulo" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+         </children>
+      </AnchorPane>
+      <Button id="BtnDelete" fx:id="BtnEliminarTelefonoSucursal" disable="true" layoutX="792.0" layoutY="212.0" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#MetodoEliminarTelefonoSucursal" prefHeight="80.0" prefWidth="80.0" styleClass="BtnCrud" />
+   </children>
+</AnchorPane>

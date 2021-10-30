@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" styleClass="AnchorPaneMain" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spomp.controller.CrudUsuariosController">
+    <stylesheets>
+        <URL value="@/view/style/crudusuarios.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="900.0" styleClass="AnchorPainDataUser">
+         <children>
+            <Button id="BtnModuloActual" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="120.0" layoutY="59.0" styleClass="LabelH1" text="USUARIOS" />
+            <Button id="BtnRegresarAModuloAnterior" fx:id="BtnRegresar" layoutX="786.0" layoutY="20.0" mnemonicParsing="false" onAction="#MetodoRegresarAntesDeCrudMantenimiento" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="706.0" layoutY="59.0" styleClass="LabelH1" text="REGRESAR" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="252.0" layoutY="167.0" prefHeight="290.0" prefWidth="369.0">
+         <children>
+            <TextField fx:id="CampoNombre" layoutX="25.0" layoutY="14.0" minHeight="30.0" minWidth="250.0" promptText="DIGITE EL NOMBRE" />
+            <TextField fx:id="CampoApellido" layoutX="25.0" layoutY="52.0" minHeight="30.0" minWidth="250.0" promptText="DIGITE EL APELLIDO" />
+            <TextField fx:id="CampoEmail" layoutX="25.0" layoutY="90.0" minHeight="30.0" minWidth="250.0" promptText="DIGITE EL EMAIL" />
+            <PasswordField fx:id="CampoPass" layoutX="25.0" layoutY="128.0" minHeight="30.0" minWidth="250.0" promptText="DIGITE SU CONTRASEÑA" />
+            <ComboBox fx:id="CbTipoUsuario" layoutX="25.0" layoutY="167.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="319.0" promptText="-- SELECCIONE EL TIPO Y PERFIL --" />
+            <ComboBox fx:id="CbSucursal" layoutX="24.0" layoutY="206.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="319.0" promptText="-- SELECCIONE LA SUCURSAL --" />
+            <ComboBox fx:id="CbDepto" disable="true" layoutX="25.0" layoutY="246.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="319.0" promptText="-- SELECCIONE EL DEPARTAMENTO --" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="BtnRegistrar" layoutX="387.0" layoutY="525.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#MetodoRegistrarUsuario" styleClass="BtnAction" text="REGISTRAR" />
+   </children>
+</AnchorPane>

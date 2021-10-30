@@ -1,0 +1,104 @@
+.AnchorPainDataUser{
+    -fx-background-color: #005377;
+}
+
+.BtnLogo{
+    -fx-background-radius: 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white;
+    -fx-background-image: url('../img/login/logo.png');
+}
+
+.AnchorPaneMain{
+    -fx-background-color: white;
+}
+
+.AnchorPaneForm{
+    -fx-background-color: white;
+}
+
+.BtnAction{
+    -fx-background-color: #005377;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.BtnAction:hover{
+    -fx-background-color: #B0DAF1;
+    -fx-text-fill: #005377;
+}
+
+.BtnImg{
+    -fx-background-color: #005377;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-cursor: hand;
+}
+
+#BtnImgUser{
+    -fx-background-image: url('../img/menu/profile.png');
+}
+
+#BtnModuleImg{
+    -fx-background-image: url('../img/login/logo.png');
+}
+
+.LabelH1{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: large;
+}
+
+.LabelH2{
+    -fx-text-fill: white;
+    -fx-font-size: large;
+}
+
+.LabelTittle{
+    -fx-text-fill: #003F83;
+    -fx-font-weight: bold;
+    -fx-font-size: large;
+}
+
+.BtnImgOptions{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+
+.BtnImgOptions:hover{
+    -fx-background-color: #B0DAF1;
+}
+
+#BtnImgMantenimiento{
+    -fx-background-image: url('../img/menu/mantenimiento.png');
+}
+
+#BtnImgSalir{
+    -fx-background-image: url('../img/menu/salida.png');
+}
+
+.LabelCurrentDBServer{
+    -fx-font-weight: bold;
+    -fx-font-size: large;
+    -fx-text-fill: #51CB20;
+}
+
+#BtnRegresarAModuloAnterior{
+    -fx-background-image: url('../img/menu/regresar.png');
+}
+
+#BtnImgRealizarPedido{
+    -fx-background-image: url('../img/menu/realizar_pedido.png');
+}
+
+#BtnImgOrdenDeCompra{
+    -fx-background-image: url('../img/menu/orden_de_compra.png');
+}
+
+#BtnImgResolucionDeCompra{
+    -fx-background-image: url('../img/menu/resolucion_de_compra.png');
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass" stylesheets="@/view/style/agregararticulo.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spomp.controller.AgregarArticuloController">
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="900.0" styleClass="AnchorPainDataUser">
+         <children>
+            <Button id="BtnModuloActual" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="120.0" layoutY="59.0" styleClass="LabelH1" text="AGREGAR ARTÍCULO" />
+            <Button id="BtnRegresarAModuloAnterior" fx:id="BtnRegresar" layoutX="786.0" layoutY="20.0" mnemonicParsing="false" onAction="#BtnRegresarAlMantenimiento" opacity="0.99" prefHeight="100.0" prefWidth="100.0" styleClass="BtnImg" />
+            <Label layoutX="706.0" layoutY="59.0" styleClass="LabelH1" text="REGRESAR" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="CampoDescripcion" layoutX="285.0" layoutY="316.0" minHeight="40.0" minWidth="250.0" prefHeight="63.0" prefWidth="292.0" promptText="DIGITE LA DESCRIPCIÓN" />
+      <TextField fx:id="CampoNombre" layoutX="285.0" layoutY="270.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="292.0" promptText="DIGITE EL NOMBRE" />
+      <Button fx:id="BtnRegistrarArticulo" layoutX="381.0" layoutY="509.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#MetodoRegistrarArticulo" styleClass="BtnAction" text="REGISTRAR" />
+   </children>
+</AnchorPane>
